@@ -3,13 +3,50 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: 
 }
+
+
 
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
+}
+
+h1{
+  color: #ffffff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 100px auto; /* centers the form vertically and horizontally */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #000000;
+}
+
+form input {
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
 }
 
 
@@ -22,27 +59,54 @@
 }
 
 #navBar{
-  background-color: beige;
-  padding: 10px;
-  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #e0e0e0;
+  color: rgba(248, 2, 2, 0.795);
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  margin-bottom: 3px;
 }
 
-#navBar a{
-  color: blue;
-  margin: 0 15px;
-  font-size: 1.2rem;
+#navBar a {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1.7em;
+  margin: 2px;
+  font-weight: 500;
+  font-family: monospace;
+  background-color: #1a1a1a;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+#navBar a:hover {
+  border-color: #ffffff;
+}
+#navBar a:focus,
+#navBar a:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
 }
 
-#navBar a:hover{
-  text-shadow: #888 ;
+.favorites{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin-top: 50px;
 }
-
-
 .home {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
   padding: 20px;
+  margin-top: 50px;
 }
 
 .recipeCard {
@@ -53,7 +117,9 @@
   text-align: center;
   transition: transform 0.3s ease;
 }
-
+.recipeCard{
+  margin-top: 50px
+}
 .recipeCard:hover {
   transform: scale(1.05);
 }
@@ -62,6 +128,38 @@
   width: 100%;
   border-radius: 8px;
   margin-bottom: 15px;
+}
+
+button {
+  width: 100%;
+  font-size: 1.1rem;
+}
+.recipe-details h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.favoritesPage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.favoritesPage div {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+}
+
+.favoritesPage h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
 }
 
 button {

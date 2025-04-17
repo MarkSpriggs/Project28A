@@ -1,5 +1,6 @@
 import { use, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import { useEffect } from 'react'
 import './App.css'
 import { Routes, Route, Link } from "react-router-dom"
 import Home from './Home'
@@ -13,7 +14,12 @@ function App() {
   const [token, setToken] = useState(null)
   const [favorites, setFavorites] = useState([])
   
-  
+  useEffect(()=>{
+    const savedToken = localStorage.getItem("authToken");
+    if(savedToken){
+      setToken(savedToken)
+    }
+  },[])
   
 
   return (

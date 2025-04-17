@@ -27,7 +27,7 @@ export default function RecipeByID() {
     <div className="recipeID">
       <h1>{recipe?.strMeal}</h1>
       <img src={recipe?.strMealThumb}></img>
-      <h2>Ingredients</h2>
+      <h2 className="ingredients">Ingredients</h2>
       <ul>
         {recipe?.ingredients.map((ingredient, index)=>(
           <li key={index}>{ingredient}</li>

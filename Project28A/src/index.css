@@ -20,11 +20,13 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #56775a;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+ 
 }
 
 button {
@@ -33,14 +35,14 @@ button {
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
-  font-family: inherit;
+  font-family: monospace;
   background-color: #1a1a1a;
   color: aliceblue;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #ffffff;
 }
 button:focus,
 button:focus-visible {

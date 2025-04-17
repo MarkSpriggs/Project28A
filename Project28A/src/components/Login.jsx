@@ -24,6 +24,7 @@ export default function Login({setToken}) {
       console.log(result)
 
       if(result.token){
+        localStorage.setItem("authToken", result.token)
         setToken(result.token);
         navigate("/");
 

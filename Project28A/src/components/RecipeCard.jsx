@@ -28,7 +28,7 @@ export default function RecipeCard({ setSelectedRecipe, recipe, selectedRecipe, 
 
     return (
       <div className="recipeCard">
-        <h1>{recipe.strMeal}</h1>
+        <h2>{recipe.strMeal}</h2>
         <img className="cardsImage" src={recipe.strMealThumb}></img>
 
         <button onClick={handleClick}>Learn More</button>
