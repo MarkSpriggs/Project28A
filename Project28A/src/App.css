@@ -1,0 +1,70 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+#navBar{
+  background-color: beige;
+  padding: 10px;
+  text-align: center;
+}
+
+#navBar a{
+  color: blue;
+  margin: 0 15px;
+  font-size: 1.2rem;
+}
+
+#navBar a:hover{
+  text-shadow: #888 ;
+}
+
+
+.home {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.recipeCard {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.recipeCard:hover {
+  transform: scale(1.05);
+}
+
+.recipeCard img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+button {
+  width: 100%;
+  font-size: 1.1rem;
+}
